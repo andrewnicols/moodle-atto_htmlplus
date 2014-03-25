@@ -1,0 +1,10 @@
+{
+    "moodle-atto_htmlplus-button": {
+        "requires": [
+            "moodle-editor_atto-plugin",
+            "moodle-atto_htmlplus-beautify",
+            "moodle-atto_htmlplus-codemirror",
+            "event-valuechange"
+        ]
+    }
+}
