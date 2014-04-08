@@ -40,7 +40,8 @@ Y.namespace('M.atto_htmlplus').Button = Y.Base.create('button', Y.M.editor_atto.
     initializer: function() {
         this.addButton({
             icon: 'e/source_code',
-            callback: this._toggleHTML
+            callback: this._toggleHTML,
+            title: 'buttonname'
         });
     },
 

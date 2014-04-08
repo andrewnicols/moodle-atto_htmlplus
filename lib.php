@@ -15,12 +15,23 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_htmlplus', language 'en'.
+ * Atto text editor integration version file.
  *
  * @package    atto_htmlplus
- * @copyright  2014 Andrew Nicols <andrew@nicols.co.uk>
+ * @copyright  2014 Andrew Nicols
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'HTMLPlus';
-$string['buttonname'] = 'HTML';
+defined('MOODLE_INTERNAL') || die();
+
+/**
+ * Get the list of strings for this plugin.
+ *
+ * @param string $elementid
+ */
+function atto_htmlplus_strings_for_js() {
+    global $PAGE;
+
+    $PAGE->requires->strings_for_js(array('buttonname',
+            ), 'atto_htmlplus');
+}
