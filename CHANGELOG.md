@@ -1,5 +1,8 @@
 # Changelog
 
+## 2014053003
+ed9165d Correct text-alignment for RTL. (Fixes #1)
+
 ## 2014053002
 2411023 Add plugin maturity
 
