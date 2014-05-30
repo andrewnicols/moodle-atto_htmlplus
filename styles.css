@@ -1,3 +1,4 @@
-.dir-rtl .CodeMirror-lines {
+.dir-rtl .CodeMirror {
     text-align: left;
+    direction: ltr;
 }
