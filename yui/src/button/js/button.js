@@ -116,7 +116,8 @@ Y.namespace('M.atto_htmlplus').Button = Y.Base.create('button', Y.M.editor_atto.
                 this._codeMirror = Y.M.atto_htmlplus.CodeMirror.fromTextArea(host.textarea.getDOMNode(), {
                     lineNumbers: true,
                     mode: 'htmlmixed',
-                    tabSize: 2
+                    tabSize: 2,
+                    lineWrapping: true
                 });
                 this._codeMirror.on('change', function(cm) {
                     cm.save();
