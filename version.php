@@ -28,3 +28,4 @@ $plugin->version   = 2014053001;        // The current plugin version (Date: YYY
 $plugin->requires  = 2014051200;        // Requires this Moodle version.
 $plugin->component = 'atto_htmlplus';   // Full name of the plugin (used for diagnostics).
 $plugin->release   = '2.7 (Build: 2014053001)';
+$plugin->maturity  = MATURITY_STABLE;
