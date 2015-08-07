@@ -6,7 +6,8 @@
                 "wrapper.js",
                 "beautify.js",
                 "beautify-css.js",
-                "beautify-html.js"
+                "beautify-html.js",
+                "wrapper-end.js"
             ]
         }
     },
