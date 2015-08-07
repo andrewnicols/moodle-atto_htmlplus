@@ -1,7 +1,11 @@
 YUI.add('moodle-atto_htmlplus-codemirror', function (Y, NAME) {
 
-var _codeMirror = window.codeMirror;
-// This is CodeMirror (http://codemirror.net), a code editor
+// Backup old value of CodeMirror
+var _codeMirror = window.CodeMirror;
+
+// Disable define for this plugin
+var _define = define;
+window.define = undefined;// This is CodeMirror (http://codemirror.net), a code editor
 // implemented in JavaScript on top of the browser's DOM.
 //
 // You can find some technical background for some of the code below
@@ -9285,10 +9289,14 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
 
 });
 // Actually define CodeMirror in our namespace.
-Y.namespace('M.atto_htmlplus').CodeMirror = CodeMirror;
+Y.namespace('M.atto_htmlplus').CodeMirror = window.CodeMirror;
 
 // Restore the original CodeMirror in case one existed.
 window.CodeMirror = _codeMirror;
+
+// Restore define
+window.define = _define;
+
 
 
 }, '@VERSION@', {"requires": ["moodle-atto_htmlplus-codemirror-skin"]});
