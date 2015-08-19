@@ -6,6 +6,8 @@ YUI.add('moodle-atto_htmlplus-beautify', function (Y, NAME) {
 // namespace. Note, we'll have to remove this when YUI supports, and we move to ES6.
 var exports = {};
 
+var define = null; // Remove require.js support in this context.
+
 // JSBeautify calls require() in order to get the existing exported modules.
 var require = function() {
     return exports;
