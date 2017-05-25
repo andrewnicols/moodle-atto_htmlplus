@@ -1,0 +1,10 @@
+{
+    "name": "andrewnicols/moodle-atto_htmlplus",
+    "type": "moodle-atto",
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "installer-name": "htmlplus"
+    }
+}
