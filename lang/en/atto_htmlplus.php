@@ -24,3 +24,7 @@
 
 $string['pluginname'] = 'HTMLPlus';
 $string['buttonname'] = 'HTML';
+/*
+ * GDPR compliant
+ */
+$string['privacy:no_data_reason'] = "The atto htmlplus plugin doesn't store any personal data.";
