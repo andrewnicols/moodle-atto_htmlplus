@@ -46,6 +46,6 @@ class provider implements
      * @return  string
      */
     public static function _get_reason() {
-        return 'privacy:no_data_reason';
+        return 'privacy:metadata';
     }
 }
