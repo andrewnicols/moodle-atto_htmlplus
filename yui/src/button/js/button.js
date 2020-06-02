@@ -111,7 +111,6 @@ Y.namespace('M.atto_htmlplus').Button = Y.Base.create('button', Y.M.editor_atto.
                 width: this.editor.getComputedStyle('width'),
                 height: this.editor.getComputedStyle('height')
             };
-            this.editor.hide();
             if (!this._codeMirror) {
                 this._codeMirror = Y.M.atto_htmlplus.CodeMirror.fromTextArea(host.textarea.getDOMNode(), {
                     lineNumbers: true,
@@ -126,6 +125,7 @@ Y.namespace('M.atto_htmlplus').Button = Y.Base.create('button', Y.M.editor_atto.
                 Y.one(this._codeMirror.getWrapperElement()).show();
                 this._codeMirror.refresh();
             }
+            this.editor.hide();
             this._codeMirror.setSize(dimensions.width, dimensions.height);
 
             // Focus on the textarea.
