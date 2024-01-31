@@ -2,7 +2,8 @@ HTML Plus plugin for Atto
 =========================
 
 > [!IMPORTANT]
-> This code is present in the core Moodle product from Moodle 2.8 onwards.
+> This code is present in the core Moodle product from Moodle 2.8 onwards as part of atto_html.
+> See [MDL-51177](https://tracker.moodle.org/browse/MDL-51177).
 > This plugin is *ONLY* for Moodle 2.7.
 > *DO NOT* use this plugin!!!
 
